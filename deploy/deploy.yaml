@@ -17,7 +17,7 @@ spec:
         app: spring-boot
     spec:
       containers:
-      - image: ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot:latest
+      - image: rajkumarce/spring-boot:latest
         imagePullPolicy: Always
         name: spring-boot
         ports:
