@@ -45,7 +45,7 @@
 			<groupId>com.example</groupId>
 			<artifactId>demo</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency-->
+		</dependency - -->
 	</dependencies>
 
 	<build>
