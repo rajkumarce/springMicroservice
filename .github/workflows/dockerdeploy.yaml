@@ -11,9 +11,10 @@ name: 'Deploy to GKE'
 name: Build and Deploy to GKE
 
 on:
-  push:
-    branches:
-      - master
+  #push:
+   # branches:
+    #  - master
+  workflow_dispatch:
 
 env:
   PROJECT_ID: powerful-axon-444821-d1
