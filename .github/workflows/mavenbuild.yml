@@ -65,7 +65,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot:${{ github.sha }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot:latest
             
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph

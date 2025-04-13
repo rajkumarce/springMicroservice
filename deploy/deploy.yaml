@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: spring-boot
+  name: spring-boot
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: spring-boot
+    spec:
+      containers:
+      - image: ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot:latest
+        imagePullPolicy: Always
+        name: spring-boot
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
