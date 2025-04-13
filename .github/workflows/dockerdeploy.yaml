@@ -62,7 +62,7 @@ jobs:
     - name: Get GKE Credentials and Deploy
       run: |
         gcloud components install kubectl 
-        gcloud container clusters get-credentials cluster-q --region us-central1 --project powerful-axon-444821-d1
+        gcloud container clusters get-credentials cluster-1 --region us-central1 --project powerful-axon-444821-d1
         kubectl apply -f deploy/
 
     # Deploy the Docker image to the GKE cluster
